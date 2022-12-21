@@ -1,0 +1,84 @@
+/* Ссылка для шрифта для строк нашего таймера */
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+/* Добавление блока для таймера */
+ :root {
+    --gredient: linear-gradient( 
+        to right bottom, 
+        rgb(22 24 25), 
+        rgb(81 134 177 / 47%) );
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Параметры для нашего блока: рассположение, шрифт */
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right bottom, rgb(66 76 74), rgb(16 23 36));
+    color: #e0fbff;
+    font-family: "Mukta", sans-serif;
+    justify-content: center;
+}
+
+/* Параметры для нашего таймера: цвет и расположение */
+.timer {
+    background: var(--gredient);
+    padding: 32px;
+    border-radius: 16px;
+}
+    .timer__title {
+    font-size: 48px;
+} 
+
+.timer__box {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+/* Для того чтобы все было по центру */
+.timer__item {
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+}
+  
+/* Для отступа внутренностей нашего таймера */
+.timer__item:not(:last-child) {
+    margin-right: 32px;
+}
+
+/* Размер шрифта внутренних строк нашего таймера */
+.timer__num {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: sans-serif;
+    padding: 0 30px;
+    border-right: 1px solid #fff;
+    font-size: 35px;
+    line-height: 1em;
+}
+
+.timer__num :last-child {
+    border: none;
+}
+
+
+/* Отступ наших сущностей внутри таймера */
+.timer__name {
+    margin-top: 16px;
+    font-weight: 250;
+}
+
+
+
